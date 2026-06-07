@@ -47,7 +47,7 @@ export async function changePassword(req: AuthRequest, res: Response): Promise<v
     sendSuccess(res, 200, { message: 'Password updated successfully' });
   } catch (err) {
     if (err instanceof InvalidPasswordError) {
-      sendError(res, 400, err.message);
+      sendError(res, 401, err.message);
       return;
     }
     throw err;
