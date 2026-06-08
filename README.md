@@ -180,6 +180,26 @@ Para ver el historial de ramas en forma de grafo:
 git log --oneline --graph --all
 ```
 
-## Uso de inteligencia artificial
-
+## Uso de IA
 Durante el desarrollo se utilizó inteligencia artificial como apoyo para estructurar el proyecto, revisar buenas prácticas de seguridad, generar casos de prueba base y mejorar la documentación técnica. El código fue revisado, adaptado, probado y ajustado manualmente antes de su entrega.
+
+---
+
+## Pruebas con Postman
+
+A continuación se adjuntan las capturas de pantalla de las pruebas realizadas a la API utilizando Postman, demostrando el correcto funcionamiento de los 5 endpoints requeridos en la evaluación:
+
+### 1. Registro de usuario (`/register`)
+![Registro de usuario](./screenshots/register.png)
+
+### 2. Inicio de sesión (`/login`)
+![Inicio de sesión](./screenshots/login.png)
+
+### 3. Perfil de usuario (`/me`)
+![Perfil de usuario](./screenshots/me.png)
+
+### 4. Feed de comentarios (`/feed`)
+![Feed de comentarios](./screenshots/feed.png)
+
+### 5. Cambio de contraseña (`/change-password`)
+![Cambio de contraseña](./screenshots/change-password.png)

@@ -46,7 +46,7 @@ export class AuthService {
         email: data.email,
         username: data.username,
         password: hashedPassword,
-        avatar: data.avatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${data.username}`,
+        avatar: data.avatar,
       },
     });
 

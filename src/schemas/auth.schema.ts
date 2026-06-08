@@ -21,7 +21,7 @@ export const registerSchema = z.object({
     .min(8, 'Password must be at least 8 characters')
     .regex(/[A-Z]/, 'Password must contain at least one uppercase letter')
     .regex(/[0-9]/, 'Password must contain at least one number'),
-  avatar: z.string().refine((val) => val.startsWith('http') || val.startsWith('data:image/'), 'Avatar must be a valid URL or base64 image').optional(),
+  avatar: z.string({ required_error: 'Avatar is required' }).refine((val) => val.startsWith('http') || val.startsWith('data:image/'), 'Avatar must be a valid URL or base64 image'),
 });
 
 export const changePasswordSchema = z.object({
